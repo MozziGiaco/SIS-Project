@@ -2,21 +2,13 @@ import java.util.Scanner;
 
 public class mainMenu
 	{
-		static int intInput;
+		static Scanner intInput = new Scanner(System.in);
+
 		static int userChoice;
-
-		public static void main(String[] args)
-			{
-
-				makeMenu();
-
-			}
+		static int userChoice2;
 
 		public static void makeMenu()
 			{
-				Scanner intInput = new Scanner(System.in);
-
-				userChoice = intInput.nextInt();
 				System.out.println("What would you like to do?");
 
 				System.out.println("(1) add or delete a student");
@@ -24,10 +16,14 @@ public class mainMenu
 				System.out.println("(2) change student grades/schedule");
 
 				System.out.println("(3) sort students");
+
+				userChoice = intInput.nextInt();
+
 			}
 
 		public static void subMenu()
 			{
+
 				if (userChoice == 1)
 					{
 						System.out.println("Add or Delete a Student");
@@ -51,6 +47,7 @@ public class mainMenu
 
 						System.out.println("(3) Sort by period");
 					}
+
 			}
 
 	}
