@@ -15,23 +15,23 @@ public class Sorting implements Comparator<Student>
 //					System.out.println( count +") " + a);
 //				}
 //		}
-		private static void lastName()
+		public static void lastName()
 		{
 			
 		}
-		private static void GPA()
+		public static void GPA()
 		{
 			
 		}
-		private static void period1()
+		public static void period1()
 		{
 			
 		}
-		private static void period2()
+		public static void period2()
 		{
 				
 		}
-		private static void period3()
+		public static void period3()
 		{
 				
 		}
@@ -39,8 +39,11 @@ public class Sorting implements Comparator<Student>
 		public int compare(Student s1, Student s2)
 			{
 				return 0;
-//				s1.getLastName().compareTo(s2.getLastName());
+						//s1.getLastName().compareTo(s2.getLastName());
+				//Compares students last name
+			
 			}
+		
 
 
 	}
