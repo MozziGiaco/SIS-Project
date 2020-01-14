@@ -15,23 +15,23 @@ public class Sorting implements Comparator<Student>
 //					System.out.println( count +") " + a);
 //				}
 //		}
-		private static void lastName()
+		public static void lastName()
 		{
 			
 		}
-		private static void GPA()
+		public static void GPA()
 		{
 			
 		}
-		private static void period1()
+		public static void period1()
 		{
 			
 		}
-		private static void period2()
+		public static void period2()
 		{
 				
 		}
-		private static void period3()
+		public static void period3()
 		{
 				
 		}
