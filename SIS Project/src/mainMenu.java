@@ -30,6 +30,13 @@ public class mainMenu
 
 						System.out.println("(1) Add a Student");
 						System.out.println("(2) Delete a Student");
+						userChoice2 = intInput.nextInt();
+
+						if (userChoice2 == 1)
+							{
+
+							}
+
 					}
 				if (userChoice == 2)
 					{
@@ -37,6 +44,8 @@ public class mainMenu
 
 						System.out.println("(1) Change Grade");
 						System.out.println("(2) Switch Classes");
+						userChoice2 = intInput.nextInt();
+
 					}
 				if (userChoice == 3)
 					{
@@ -46,6 +55,21 @@ public class mainMenu
 						System.out.println("(2) Sort by GPA");
 
 						System.out.println("(3) Sort by period");
+						userChoice2 = intInput.nextInt();
+
+						if (userChoice2 == 1)
+							{
+								Sorting.lastName();
+							}
+						if (userChoice2 == 2)
+							{
+								Sorting.GPA();
+							}
+						if (userChoice2 == 3)
+							{
+								Sorting.period1();
+							}
+
 					}
 
 			}
