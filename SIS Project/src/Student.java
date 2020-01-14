@@ -18,7 +18,30 @@ public class Student
 				this.classes = classes;
 				
 				//TODO make generate GPA based on the classes
-				this.gpa = 0.00;
+				double totalGP = 0.0;
+				for(Class c: classes){
+					String letterGrade = c.getGrade().substring(0,1);
+						switch (letterGrade)
+							{
+							case "A":
+								totalGP += 4.0;
+								break;
+							case "B":
+								totalGP += 3.0;
+								break;
+							case "C":
+								totalGP += 2.0;
+								break;
+							case "D":
+								totalGP += 1.0;
+								break;
+							case "F":
+								totalGP += 0.0;
+								break;
+
+							}
+				}
+				this.gpa = totalGP/classes.length;
 				
 				
 			}
