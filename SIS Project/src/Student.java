@@ -17,7 +17,6 @@ public class Student
 				this.lastName = lastName;
 				this.classes = classes;
 				
-				//TODO make generate GPA based on the classes
 				double totalGP = 0.0;
 				for(Class c: classes){
 					String letterGrade = c.getGrade().substring(0,1);
