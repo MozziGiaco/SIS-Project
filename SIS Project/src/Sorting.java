@@ -17,7 +17,7 @@ public class Sorting implements Comparator<Student>
 //		}
 		public static void lastName()
 		{
-			
+			//SortingGPA.compare(l,s);
 		}
 		public static void GPA()
 		{
