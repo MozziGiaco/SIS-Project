@@ -39,8 +39,11 @@ public class Sorting implements Comparator<Student>
 		public int compare(Student s1, Student s2)
 			{
 				return 0;
-//				s1.getLastName().compareTo(s2.getLastName());
+						//s1.getLastName().compareTo(s2.getLastName());
+				//Compares students last name
+			
 			}
+		
 
 
 	}
