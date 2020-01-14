@@ -7,7 +7,7 @@ public class SortingClass implements Comparator<Student>
 			{
 				return 0;
 						//s1.getLastName().compareTo(s2.getLastName());
-				//Compares students last name
+				//Compares students classes
 			
 			}
 	}
