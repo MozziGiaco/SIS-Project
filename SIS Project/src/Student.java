@@ -5,6 +5,7 @@ public class Student
 		
 		protected String firstName;
 		protected String lastName;
+		protected String fullName;
 		
 		protected Class[] classes;
 		protected double gpa;
@@ -15,26 +16,27 @@ public class Student
 
 				this.firstName = firstName;
 				this.lastName = lastName;
+				this.fullName = firstName +" "+lastName;
 				this.classes = classes;
 				
 				double totalGP = 0.0;
 				for(Class c: classes){
 					String letterGrade = c.getGrade().substring(0,1);
-						switch (letterGrade)
+						switch (letterGrade.toLowerCase())
 							{
-							case "A":
+							case "a":
 								totalGP += 4.0;
 								break;
-							case "B":
+							case "b":
 								totalGP += 3.0;
 								break;
-							case "C":
+							case "c":
 								totalGP += 2.0;
 								break;
-							case "D":
+							case "d":
 								totalGP += 1.0;
 								break;
-							case "F":
+							case "f":
 								totalGP += 0.0;
 								break;
 
@@ -44,5 +46,69 @@ public class Student
 				
 				
 			}
+
+
+		public String getFirstName()
+			{
+				return firstName;
+			}
+
+
+		public void setFirstName(String firstName)
+			{
+				this.firstName = firstName;
+			}
+
+
+		public String getLastName()
+			{
+				return lastName;
+			}
+
+
+		public void setLastName(String lastName)
+			{
+				this.lastName = lastName;
+			}
+
+
+		public String getFullName()
+			{
+				return fullName;
+			}
+
+
+		public void setFullName(String fullName)
+			{
+				this.fullName = fullName;
+			}
+
+
+		public Class[] getClasses()
+			{
+				return classes;
+			}
+
+
+		public void setClasses(Class[] classes)
+			{
+				this.classes = classes;
+			}
+
+
+		public double getGpa()
+			{
+				return gpa;
+			}
+
+
+		public void setGpa(double gpa)
+			{
+				this.gpa = gpa;
+			}
+		
+		
+		
+		
 
 	}

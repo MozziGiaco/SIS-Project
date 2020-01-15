@@ -1,6 +1,7 @@
 import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 
 
@@ -10,6 +11,9 @@ public class FileReader
 		public static ArrayList<Student> loadRoster(){
 			
 			ArrayList<Student> roster = new ArrayList<Student>();
+			
+			
+			
 		try
 			{
 				
@@ -21,7 +25,7 @@ public class FileReader
 					String[] classNames = file.nextLine().split(" ");
 					
 					Class[] classes = new Class[3];
-					for(int i = 0; i < classNames.length; i++){
+					for(int i = 0; i < classes.length; i++){
 						classes[i] = new Class(classNames[i*2], classNames[i*2+1]);
 					}
 					
