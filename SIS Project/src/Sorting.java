@@ -1,4 +1,6 @@
+import java.util.Collections;
 import java.util.Comparator;
+import java.util.List;
 public class Sorting implements Comparator<Student>
 	{
 		static String[] help = {"Last Name", "GPA", "period"};
@@ -17,7 +19,13 @@ public class Sorting implements Comparator<Student>
 //		}
 		public static void lastName()
 		{
-			//SortingGPA.compare(l,s);
+//			
+//			for(int i = 0; i < Roster.roster.size()-1; i++)
+//				{
+//					SortingLastName.compare(Roster.roster.get(i).lastName,Roster.roster.get(i+1).lastName);
+//				}
+			//Collections.sort((List<T>) Roster.roster);
+			System.out.println();
 		}
 		public static void GPA()
 		{
@@ -38,9 +46,9 @@ public class Sorting implements Comparator<Student>
 		@Override
 		public int compare(Student s1, Student s2)
 			{
-				return 0;
-						//s1.getLastName().compareTo(s2.getLastName());
+				return s1.getLastName().compareTo(s2.getLastName());
 				//Compares students last name
+				
 			
 			}
 		
