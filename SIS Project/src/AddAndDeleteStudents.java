@@ -4,6 +4,11 @@ public class AddAndDeleteStudents {
 
 	public static void main(String[] args) 
 	{
+		addingAndDeleting();
+	}
+	
+	public static void addingAndDeleting()
+	{
 	  //code to either add or delete students from the 'class'
 		System.out.println("Add or Delete a Student");
 
