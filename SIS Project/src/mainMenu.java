@@ -26,16 +26,7 @@ public class mainMenu
 
 				if (userChoice == 1)
 					{
-						System.out.println("Add or Delete a Student");
-
-						System.out.println("(1) Add a Student");
-						System.out.println("(2) Delete a Student");
-						userChoice2 = intInput.nextInt();
-
-						if (userChoice2 == 1)
-							{
-
-							}
+						AddAndDeleteStudents.addingAndDeleting();
 
 					}
 				if (userChoice == 2)
