@@ -22,6 +22,12 @@ public class AddAndDeleteStudents {
 		{
 			System.out.println("You chose to add a student!");
 			
+			//Line to integrate the printing of the list of students
+			for(int i = 0; i < Roster.roster.size(); i++)
+			{
+			System.out.println(Roster.roster.get(i));
+			}
+			
 			//having the user enter the first name of the student they want to add
 			System.out.println("Please enter the first name of the student you want to add.");
 			
@@ -43,7 +49,10 @@ public class AddAndDeleteStudents {
 			System.out.println("You chose to delete a student.");
 			
 			//Line to integrate the printing of the list of students
-			//System.out.println();
+			for(int i = 0; i < Roster.roster.size(); i++)
+			{
+			System.out.println(Roster.roster.get(i));
+			}
 			
 			//having the user enter the *full name* of the student they wish to delete
 			System.out.println("Please enter the name of the student you wish to take off the roster.");
