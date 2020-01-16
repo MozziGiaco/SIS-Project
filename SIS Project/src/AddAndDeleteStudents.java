@@ -7,6 +7,9 @@ public class AddAndDeleteStudents {
 		addingAndDeleting();
 	}
 	
+	//TODO try to implement a time delay in certain areas to enhance the program, 
+	//and mimic the thinking of a computer when running the program to either add or delete a student
+	
 	public static void addingAndDeleting()
 	{
 	  //code to either add or delete students from the 'class'
@@ -31,14 +34,41 @@ public class AddAndDeleteStudents {
 			//having the user enter the first name of the student they want to add
 			System.out.println("Please enter the first name of the student you want to add.");
 			
-			Scanner stringInput = new Scanner (System.in);
-			String name1 = stringInput.nextLine();
+			Scanner stringInput1 = new Scanner (System.in);
+			String firstName = stringInput1.nextLine();
 			
-			//what to do after name is entered
+			//having the user enter the last name of the student they want to add
+			System.out.println("Please enter the last name of the student you want to add.");
 			
-			//Ask to enter last name
+			Scanner stringInput2 = new Scanner (System.in);
+			String lastName = stringInput2.nextLine();
 			
-			//Then finally ask for classes and grades
+			//telling the user the choice of classes for their new student
+			System.out.println("Keep in mind, there are three classes available for the new student...");
+			System.out.println("Algebra");
+			System.out.println("Biology");
+			System.out.println("and English");
+			System.out.println("These can be entered in any order you wish.");
+			
+			//having the user enter the first class and corresponding grade for their new student
+			System.out.println("Please enter the first class and corresponding grade for the new student.");
+			System.out.println("Written as A+, D-, F, B, etc.");
+			System.out.println("Ex. English A-");
+			
+			Scanner stringInput3 = new Scanner (System.in);
+			String class1 = stringInput3.nextLine();
+			
+			//having the user enter the second class and corresponding grade for their new student
+			System.out.println("Please enter the second class and corresponding grade for the new student.");
+			
+			Scanner stringInput4 = new Scanner (System.in);
+			String class2 = stringInput4.nextLine();
+			
+			//having the user enter the third and final class and corresponding grade for their new student
+			System.out.println("Please enter the third class and corresponding grade for the new student.");
+			
+			Scanner stringInput5 = new Scanner (System.in);
+			String class3 = stringInput5.nextLine();
 			
 			//Figure out how to integrate GPA
 			
@@ -54,11 +84,21 @@ public class AddAndDeleteStudents {
 			System.out.println(Roster.roster.get(i));
 			}
 			
-			//having the user enter the *full name* of the student they wish to delete
-			System.out.println("Please enter the name of the student you wish to take off the roster.");
+			//having the user enter the *first name* of the student they wish to delete
+			System.out.println("Please enter the first name of the student you wish to take off the roster.");
 			
-			Scanner stringInput = new Scanner(System.in);
-		    String name3 = stringInput.nextLine();
+			Scanner stringInput6 = new Scanner(System.in);
+		    String firstName1 = stringInput6.nextLine();
+		    
+		    //having the user enter the *last name* of the student they wish to delete
+		    System.out.println("Please enter the last name of the student you wish to take off the roster.");
+		    
+		    Scanner stringInput7 = new Scanner(System.in);
+		    String lastName2 = stringInput7.nextLine();
+		    
+		    
+		    //TODO make sure the program can scan through the roster in order to ensure
+		    //that the name the user entered to delete is actually a 'real' name in said roster
 		    
 		    //code to remove the student that the user has requested
 		    //if(name )
