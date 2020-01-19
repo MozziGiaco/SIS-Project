@@ -42,7 +42,13 @@ public class Student
 
 							}
 				}
-				this.gpa = totalGP/classes.length;
+				double g  = totalGP/classes.length;
+				g*=100;
+				g=(int)g;
+				g/=100.0;
+				
+				
+				this.gpa = g;
 				
 				
 			}
