@@ -1,4 +1,6 @@
+import java.util.ArrayList;
 import java.util.Scanner;
+import java.io.File;
 
 public class AddAndDeleteStudents {
 
@@ -12,6 +14,9 @@ public class AddAndDeleteStudents {
 	
 	public static void addingAndDeleting()
 	{
+	  //Array list for the Student
+		ArrayList<Student> roster = new ArrayList<Student>();
+		
 	  //code to either add or delete students from the 'class'
 		System.out.println("Add or Delete a Student");
 
@@ -26,22 +31,18 @@ public class AddAndDeleteStudents {
 			System.out.println("You chose to add a student!");
 			
 			//Line to integrate the printing of the list of students
+			Roster.load();
+			
 			for(int i = 0; i < Roster.roster.size(); i++)
 			{
-			System.out.println(Roster.roster.get(i));
+			System.out.println("Student: " + Roster.roster.get(i).getFullName().toUpperCase() + " + GPA: " + Roster.roster.get(i).getGpa());
 			}
 			
-			//having the user enter the first name of the student they want to add
-			System.out.println("Please enter the first name of the student you want to add.");
+			//having the user enter the full name of the student they want to add
+			System.out.println("Please enter the FULL name of the student you want to add.");
 			
 			Scanner stringInput1 = new Scanner (System.in);
-			String firstName = stringInput1.nextLine();
-			
-			//having the user enter the last name of the student they want to add
-			System.out.println("Please enter the last name of the student you want to add.");
-			
-			Scanner stringInput2 = new Scanner (System.in);
-			String lastName = stringInput2.nextLine();
+			String fullName = stringInput1.nextLine();
 			
 			//telling the user the choice of classes for their new student
 			System.out.println("Keep in mind, there are three classes available for the new student...");
@@ -70,7 +71,13 @@ public class AddAndDeleteStudents {
 			Scanner stringInput5 = new Scanner (System.in);
 			String class3 = stringInput5.nextLine();
 			
-			//Figure out how to integrate GPA
+			Class[] classArray = new Class[3];
+			
+//			classArray[1] = class1;
+//			classArray[2] = class2;
+//			classArray[3] = class3;
+			
+			
 			
 		}
 		
@@ -79,23 +86,18 @@ public class AddAndDeleteStudents {
 			System.out.println("You chose to delete a student.");
 			
 			//Line to integrate the printing of the list of students
+            Roster.load();
+			
 			for(int i = 0; i < Roster.roster.size(); i++)
 			{
-			System.out.println(Roster.roster.get(i));
+			System.out.println("Student: " + Roster.roster.get(i).getFullName().toUpperCase() + " + GPA: " + Roster.roster.get(i).getGpa());
 			}
 			
-			//having the user enter the *first name* of the student they wish to delete
-			System.out.println("Please enter the first name of the student you wish to take off the roster.");
+			//having the user enter the full name of the student they wish to delete
+			System.out.println("Please enter the FULL name of the student you wish to take off the roster.");
 			
 			Scanner stringInput6 = new Scanner(System.in);
 		    String firstName1 = stringInput6.nextLine();
-		    
-		    //having the user enter the *last name* of the student they wish to delete
-		    System.out.println("Please enter the last name of the student you wish to take off the roster.");
-		    
-		    Scanner stringInput7 = new Scanner(System.in);
-		    String lastName2 = stringInput7.nextLine();
-		    
 		    
 		    //TODO make sure the program can scan through the roster in order to ensure
 		    //that the name the user entered to delete is actually a 'real' name in said roster
