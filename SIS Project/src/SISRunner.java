@@ -4,9 +4,9 @@ public class SISRunner
 
 		public static void main(String[] args)
 			{
-				mainMenu.makeMenu();
-				mainMenu.subMenu();
-				
+//				mainMenu.makeMenu();
+//				mainMenu.subMenu();
+				Sorting.period1();
 			}
 
 	}
