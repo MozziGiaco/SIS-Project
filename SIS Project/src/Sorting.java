@@ -70,7 +70,8 @@ public class Sorting implements Comparator<Student>
 				+ Roster.roster.get(i).getLastName().substring(0, 1).toUpperCase() +Roster.roster.get(i).getLastName().substring(1, Roster.roster.get(i).lastName.length())+ " "  +
 				Roster.roster.get(i).classes[0].name.substring(0,1).toUpperCase()+Roster.roster.get(i).classes[0].name.substring(1,Roster.roster.get(i).classes[0].name.length())+ " "  + Roster.roster.get(i).classes[0].grade+ " " +Roster.roster.get(i).classes[1].name.substring(0,1).toUpperCase()+Roster.roster.get(i).classes[1].name.substring(1,Roster.roster.get(i).classes[1].name.length())
 				+ " "  + Roster.roster.get(i).classes[1].grade+ " "  +
-				Roster.roster.get(i).classes[2].name.substring(0,1).toUpperCase()+Roster.roster.get(i).classes[2].name.substring(1,Roster.roster.get(i).classes[2].name.length())+ " "  + Roster.roster.get(i).classes[2].grade+ " "  +  Roster.roster.get(i).gpa);
+				Roster.roster.get(i).classes[2].name.substring(0,1).toUpperCase()+Roster.roster.get(i).classes[2].name.substring(1,Roster.roster.get(i).classes[2].name.length())+ " "  + Roster.roster.get(i).classes[2].grade+ " "  +  Roster.roster.get(i).gpa );
+					
 				}
 		}
 		@Override
