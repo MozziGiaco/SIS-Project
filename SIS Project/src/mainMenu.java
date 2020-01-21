@@ -6,6 +6,7 @@ public class mainMenu
 
 		static int userChoice;
 		static int userChoice2;
+		static int userChoice3;
 
 		public static void makeMenu()
 			{
@@ -58,7 +59,26 @@ public class mainMenu
 							}
 						if (userChoice2 == 3)
 							{
-								Sorting.period1();
+								System.out.println("Which period would you like to choose?");
+								System.out.println("(1) Period 1");
+								System.out.println("(2) Period 2");
+								System.out.println("(3) Period 3");
+
+								userChoice3 = intInput.nextInt();
+
+								if (userChoice3 == 1)
+									{
+										Sorting.period1();
+									}
+								if (userChoice3 == 2)
+									{
+										Sorting.period2();
+									}
+								if (userChoice3 == 3)
+									{
+										Sorting.period3();
+									}
+
 							}
 
 					}
