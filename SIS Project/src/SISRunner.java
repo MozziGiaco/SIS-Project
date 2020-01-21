@@ -9,7 +9,6 @@ public class SISRunner
 				mainMenu.subMenu();
 				Roster.load();
 
-				
 			}
 
 	}
