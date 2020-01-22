@@ -113,6 +113,38 @@ public class Student
 				this.gpa = gpa;
 			}
 		
+		public void updateGpa(){
+			
+			double totalGP = 0.0;
+			for(Class c: this.classes){
+				String letterGrade = c.getGrade().substring(0,1);
+					switch (letterGrade.toLowerCase())
+						{
+						case "a":
+							totalGP += 4.0;
+							break;
+						case "b":
+							totalGP += 3.0;
+							break;
+						case "c":
+							totalGP += 2.0;
+							break;
+						case "d":
+							totalGP += 1.0;
+							break;
+						case "f":
+							totalGP += 0.0;
+							break;
+
+						}
+			}
+			double g  = totalGP/classes.length;
+			g*=100;
+			g=(int)g;
+			g/=100.0;
+			this.gpa = g;
+		}
+		
 		
 		
 		
