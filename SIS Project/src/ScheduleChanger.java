@@ -100,6 +100,7 @@ public class ScheduleChanger
 
 				s.getClasses()[tempIndex] = s.getClasses()[response - 1];
 				s.getClasses()[response - 1] = tempClass;
+				System.out.println("Schedule changed.");
 
 			}
 
