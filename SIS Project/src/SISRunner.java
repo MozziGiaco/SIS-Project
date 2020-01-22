@@ -8,7 +8,7 @@ public class SISRunner
 				mainMenu.makeMenu();
 				mainMenu.subMenu();
 				Roster.load();
-				Sorting.period1();
+				//Sorting.period1();
 			}
 
 	}

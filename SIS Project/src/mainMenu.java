@@ -37,6 +37,14 @@ public class mainMenu
 						System.out.println("(1) Change Grade");
 						System.out.println("(2) Switch Classes");
 						userChoice2 = intInput.nextInt();
+						if(userChoice == 1)
+							{
+								GradeChanger.changeGrade();
+							}
+						if(userChoice == 2)
+							{
+								ScheduleChanger.changeSchedule();
+							}
 
 					}
 				if (userChoice == 3)
