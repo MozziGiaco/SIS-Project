@@ -97,6 +97,7 @@ public class GradeChanger
 								Scanner userString = new Scanner(System.in);
 								s.getClasses()[response - 1].setGrade(userString.nextLine());
 								System.out.println("Grade changed.");
+								s.updateGpa();
 
 							}
 					}
