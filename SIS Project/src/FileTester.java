@@ -20,7 +20,7 @@ public class FileTester
 //				
 //				}
 				
-				ScheduleChanger.changeSchedule();
+				GradeChanger.changeGrade();
 				
 				
 			}
